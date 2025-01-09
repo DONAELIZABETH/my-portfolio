@@ -1,0 +1,228 @@
+/* General Education Section Styling */
+.education {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0c0c0c, #272728, #2b2c2d); /* Gradient background */
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fade-in effect for the section */
+  
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(43, 43, 82, 0.6)), url('image.jpg'); /* Gradient with image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  animation: fadeIn 1s forwards; /* Fade-in effect for the section */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Section Headings */
+.education-heading4 {
+  font-size: 20px;
+  font-style: italic;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.education-heading1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+  opacity: 0;
+  animation: fadeIn 1s 0.5s forwards; /* Delay for fade-in */
+}
+
+/* Education Section Cards (B-Tech, 12th, 10th) */
+.education-btech,
+.education-12,
+.education-10 {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(10px);
+  text-align: left;
+  color: #fff;
+  max-width: 800px;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideIn 0.8s forwards; /* Slide-in effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-btech:hover,
+.education-12:hover,
+.education-10:hover {
+  transform: scale(1.05); /* Slight hover zoom effect */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Section Titles (B-Tech, 12th, 10th) */
+.bt,
+.twelve,
+.tenth {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #ffeb3b; /* Highlighted color */
+}
+
+/* Subsection Styling */
+.cse,
+.dhse,
+.kbpe,
+.cgpa,
+.apj,
+.mlm,
+.saha,
+.ptge,
+.smga {
+  font-size: 18px;
+  margin: 5px 0;
+  line-height: 1.6;
+  color: #ddd; /* Slightly lighter color for contrast */
+}
+
+.cgpa {
+  color: #ffeb3b; /* Highlighted CGPA */
+}
+
+/* Extra Curricular Activities Section */
+.education-extra {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 1s 1s forwards; /* Fade-in effect with a delay */
+}
+
+.education-extra h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.education-extra div {
+  margin: 10px 0;
+}
+
+.education-extra h3 {
+  font-size: 20px;
+  color: #f0e68c; /* Soft yellow for activity titles */
+}
+
+.education-extra h5 {
+  font-size: 16px;
+  color: #ccc; /* Lighter color for dates */
+}
+
+/* Hover Effects for Extra Section */
+.education-extra div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .education-heading1 {
+    font-size: 40px;
+  }
+
+  .bt,
+  .twelve,
+  .tenth {
+    font-size: 24px;
+  }
+
+  .cse,
+  .dhse,
+  .kbpe,
+  .cgpa,
+  .apj,
+  .mlm,
+  .saha,
+  .ptge,
+  .smga {
+    font-size: 16px;
+  }
+
+  .education-extra h1 {
+    font-size: 32px;
+  }
+
+  .education-extra h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-btech,
+  .education-12,
+  .education-10 {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .education-heading1 {
+    font-size: 32px;
+  }
+
+  .bt,
+  .twelve,
+  .tenth {
+    font-size: 20px;
+  }
+
+  .cse,
+  .dhse,
+  .kbpe,
+  .cgpa,
+  .apj,
+  .mlm,
+  .saha,
+  .ptge,
+  .smga {
+    font-size: 14px;
+  }
+
+  .education-extra h1 {
+    font-size: 28px;
+  }
+
+  .education-extra h3 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,207 @@
+/* General Certification Section Styling */
+.certification {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(43, 43, 82, 0.6)), url('image.jpg'); /* Gradient with image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  opacity: 0;
+  animation: fadeInSection 1s forwards; /* Fade-in effect */
+}
+
+/* Fade-In Animation */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Section Headings */
+.certification-heading4 {
+  font-size: 20px;
+  font-style: italic;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.certification-heading1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+  opacity: 0;
+  animation: fadeInText 1s 0.5s forwards; /* Delay for fade-in */
+}
+
+/* Fade-In Animation for Title */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Certification Container */
+.certification-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;     /* Center the items vertically */
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 60vh; /* Ensure there's enough space for the items to be centered vertically */
+}
+
+/* Certification Boxes */
+.certification-box {
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  width: 48%;
+  max-width: 500px; /* Limit width */
+  text-align: left;
+  color: #fff;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUpEffect 1s forwards; /* Slide-up effect */
+}
+
+/* New Slide-Up Animation */
+@keyframes slideUpEffect {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Certification Box Heading */
+.certification-box-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffeb3b; /* Highlighted color */
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeInFromLeft 1s ease-in-out forwards; /* Fade and slide-in effect */
+}
+
+/* New Fade and Slide-In Animation for Heading */
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Certification Titles */
+.certification-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #fbfbf8; /* Highlighted color */
+}
+
+/* Certification Items */
+.certification-item {
+  margin: 10px 0;
+  color: #ddd; /* Lighter color for certification text */
+  font-size: 16px;
+  opacity: 0;
+  animation: fadeInDescription 1s ease-in-out forwards; /* Fade-in for items */
+}
+
+/* New Fade-In Animation for Certification Items */
+@keyframes fadeInDescription {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Styling */
+.view-certificate-button {
+  background-color: #ffeb3b;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-certificate-button:hover {
+  background-color: #fbc02d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.view-certificate-button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .certification-heading1 {
+    font-size: 40px;
+  }
+
+  .certification-box {
+    width: 100%;
+  }
+
+  .certification-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certification-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .certification-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .certification-heading1 {
+    font-size: 32px;
+  }
+
+  .certification-title {
+    font-size: 14px;
+  }
+}

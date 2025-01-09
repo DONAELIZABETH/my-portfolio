@@ -1,0 +1,178 @@
+/* General Projects Section Styling */
+.projects {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(43, 43, 82, 0.6)), url('image.png'); /* Gradient with image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  opacity: 0;
+  animation: fadeInEffect 1s forwards; /* Updated fade-in effect */
+}
+
+/* New Fade-In Animation */
+@keyframes fadeInEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Section Headings */
+.projects-heading4 {
+  font-size: 20px;
+  font-style: italic;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.projects-heading1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+  opacity: 0;
+  animation: fadeInEffect 1s 0.5s forwards; /* Delay for fade-in */
+}
+
+/* Project Cards (Connect+, Vitamin Detection, Movie Listing) */
+.projects-connect-plus,
+.projects-vitamin-detection,
+.projects-movie-listing {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(10px);
+  text-align: left;
+  color: #fff;
+  max-width: 800px;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUpEffect 1s forwards; /* New slide-up animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-connect-plus:hover,
+.projects-vitamin-detection:hover,
+.projects-movie-listing:hover {
+  transform: scale(1.05); /* Slight hover zoom effect */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* New Slide-Up Animation */
+@keyframes slideUpEffect {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Project Titles */
+.project-title {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #ffeb3b; /* Highlighted color */
+  animation: slideInLeft 1s ease-out; /* New slide-in effect for titles */
+}
+
+/* New Slide-In Left Animation for Titles */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Project Descriptions */
+.project-description {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #ddd; /* Slightly lighter color for contrast */
+  font-style: italic;
+  animation: fadeInDescription 1s ease-in-out; /* New fade-in for descriptions */
+}
+
+/* New Fade-In Animation for Descriptions */
+@keyframes fadeInDescription {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project Details List */
+.project-details {
+  padding: 0;
+  font-size: 16px;
+  color: #ddd;
+  gap: 300px;
+}
+
+.project-details li {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-heading1 {
+    font-size: 40px;
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-description,
+  .project-details li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-connect-plus,
+  .projects-vitamin-detection,
+  .projects-movie-listing {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .projects-heading1 {
+    font-size: 32px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-description,
+  .project-details li {
+    font-size: 14px;
+  }
+}

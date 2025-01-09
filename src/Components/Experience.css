@@ -1,0 +1,152 @@
+/* General Experience Section Styling with Gradient Background and Image */
+.experience {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(43, 43, 82, 0.6)), url('image.jpg'); /* Gradient with image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fade-in effect for the section */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Section Headings */
+.experience-heading4 {
+  font-size: 20px;
+  font-style: italic;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.experience-heading1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+  opacity: 0;
+  animation: fadeIn 1s 0.5s forwards; /* Delay for fade-in */
+}
+
+/* Experience Cards */
+.experience-card {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  backdrop-filter: blur(10px);
+  text-align: left;
+  color: #fff;
+  max-width: 800px;
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideInFromLeft 0.8s forwards; /* Slide-in effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.05); /* Slight hover zoom effect */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Slide-In Animation */
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Experience Titles */
+.experience-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #ffe710; /* Highlighted color */
+}
+
+/* Subsection Styling */
+.experience-role {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+.experience-duration {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Hover Effects for Subsections */
+.experience-role:hover,
+.experience-duration:hover,
+.experience-description:hover {
+  color: #ffeb3b; /* Highlight text on hover */
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-heading1 {
+      font-size: 40px;
+  }
+
+  .experience-title {
+      font-size: 20px;
+  }
+
+  .experience-role,
+  .experience-duration,
+  .experience-description {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+      padding: 15px;
+      max-width: 90%;
+  }
+
+  .experience-heading1 {
+      font-size: 32px;
+  }
+
+  .experience-title {
+      font-size: 18px;
+  }
+
+  .experience-role,
+  .experience-duration,
+  .experience-description {
+      font-size: 12px;
+  }
+}
