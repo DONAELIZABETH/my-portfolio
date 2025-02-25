@@ -43,10 +43,12 @@
   animation: fadeInEffect 1s 0.5s forwards; /* Delay for fade-in */
 }
 
-/* Project Cards (Connect+, Vitamin Detection, Movie Listing) */
+/* Project Cards */
 .projects-connect-plus,
 .projects-vitamin-detection,
-.projects-movie-listing {
+.projects-movie-listing,
+.projects-hospital-booking,
+.projects-weather-app {
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
@@ -64,7 +66,9 @@
 
 .projects-connect-plus:hover,
 .projects-vitamin-detection:hover,
-.projects-movie-listing:hover {
+.projects-movie-listing:hover,
+.projects-hospital-booking:hover,
+.projects-weather-app:hover {
   transform: scale(1.05); /* Slight hover zoom effect */
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
@@ -158,7 +162,9 @@
 @media (max-width: 768px) {
   .projects-connect-plus,
   .projects-vitamin-detection,
-  .projects-movie-listing {
+  .projects-movie-listing,
+  .projects-hospital-booking,
+  .projects-weather-app {
     padding: 15px;
     max-width: 90%;
   }
