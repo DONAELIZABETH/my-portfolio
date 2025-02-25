@@ -19,6 +19,7 @@ const Skills = () => {
             <li>HTML</li>
             <li>CSS</li>
             <li>Basics of C programming,Python</li>
+             <li>SQL</li>
 
           </ul>
 
@@ -28,6 +29,7 @@ const Skills = () => {
             <li>Express.js</li>
             <li>React</li>
             <li>Bootstrap </li>
+            
           </ul>
 
           <h3 className="skills-category">Tools & Platforms:</h3>
@@ -35,6 +37,9 @@ const Skills = () => {
             <li>GitHub</li>
             <li>Jira</li>
             <li>Netify</li>
+            <li>Power BI</li>
+            <li>Vercel</li>
+            <li>VSCode</li>
           </ul>
         </div>
       </div>
