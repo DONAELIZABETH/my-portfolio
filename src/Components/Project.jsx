@@ -49,6 +49,39 @@ const Projects = () => {
           <li>Deployed the application on Netlify, ensuring seamless access and cross-device compatibility.</li>
         </ul>
       </div>
+
+      {/* Hospital Booking System */}
+      <div className="projects-hospital-booking">
+        <h2 className="project-title">
+          <FaProjectDiagram /> Hospital Booking System
+        </h2>
+        <h3 className="project-description">
+          A comprehensive hospital appointment booking system that facilitates patient-doctor interactions and streamlines scheduling.
+        </h3>
+        <ul className="project-details">
+          <li>Developed using React, Node.js, Express.js, and MySQL for a full-stack web application.</li>
+          <li>Implemented authentication and role-based access for patients and administrators.</li>
+          <li>Provided real-time appointment scheduling and management features.</li>
+          <li>Ensured seamless database interaction and optimized performance with MySQL queries.</li>
+        </ul>
+      </div>
+
+      {/* Weather App */}
+      <div className="projects-weather-app">
+        <h2 className="project-title">
+          <FaProjectDiagram /> Weather App
+        </h2>
+        <h3 className="project-description">
+          A real-time weather application that fetches live weather data and presents it in a user-friendly interface.
+        </h3>
+        <ul className="project-details">
+          <li>Fetches real-time weather data using the OpenWeather API.</li>
+          <li>Displays temperature, location, humidity, and wind speed in a structured format.</li>
+          <li>Includes dynamic weather-specific icons for conditions like clear sky, rain, and snow.</li>
+          <li>Provides user-friendly error messages for invalid input or connection issues.</li>
+          <li>Optimized for all screen sizes using Flexbox and Media Queries.</li>
+        </ul>
+      </div>
     </div>
   );
 };
