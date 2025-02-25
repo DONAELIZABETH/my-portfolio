@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-content">
         <img className="about-img" src="/img1.jpg" alt="Profile" />
         <p className="about-paragraph">
-          MERN Stack Web Designer and Developer with a strong aptitude for self-directed learning. Specializing in
+          MERN Stack Web Designer,Developer & Data Analyst with a strong aptitude for self-directed learning. Specializing in
           the creation of visually appealing, responsive, and accessible web applications, I prioritize high scalability
           and reliability. Committed to lifelong learning and embracing new challenges, I consistently seek
           opportunities for continuous growth and improvement.
