@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
   const add = 'Hello... I am';
   const mail = 'Dona Elizabeth Saji';
-  const num = 'MERN Stack Developer';
+  const num = 'MERN Stack Developer | Data Analyst';
 
   return (
     <div className="home">
